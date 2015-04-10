@@ -1,3 +1,4 @@
-baseurl = "http://yourSiteHere/"
+baseurl = "http://rocketconf.eu/"
 languageCode = "en-us"
-title = "My New Hugo Site"
+title = "RocketConf 2015"
+copyright = "RocketConf"
