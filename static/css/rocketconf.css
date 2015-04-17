@@ -71,6 +71,32 @@ body {
 }
 
 
+.sponsor-list {
+    margin-bottom: 2em;
+}
+
+.sponsor-list:after {
+    clear: both;
+}
+
+.sponsor-list .sponsor {
+    display: inline-block;
+    vertical-align: top;
+    width: 12em;
+    margin-right: 1.5em;
+    margin-bottom: 1em;
+}
+
+.sponsor-list .sponsor:nth-of-type(0) {
+    margin-right: 0em;
+}
+
+.sponsor-list .sponsor a,
+.sponsor-list .sponsor a:hover {
+    border: none;
+    text-decoration: none;
+}
+
 a {
     color: #29abe2;
     text-decoration: none;
@@ -88,6 +114,10 @@ h1, h2, h3, h4, h5, h6 {
 
 p, ul, ol, blockquote {
     margin-bottom: 1em;
+}
+
+p.centered {
+    text-align: center;
 }
 
 ul.dates {
@@ -178,12 +208,19 @@ section h2 {
     margin-bottom: 1em;
 }
 
+section h3 {
+    font-size: 1.8em;
+    margin-bottom: 1em;
+    margin-top: 1em;
+    color: #0e2b38;
+}
+
 .venue-zwijger {
     width: 100%;
     border-radius: 0.25em;
 }
 .sponsor img {
-    width: 200px;
+    width: 100%;
 }
 
 .btn {
@@ -231,3 +268,4 @@ section h2 {
     width: 20%;
     font-size: 1.3em;
 }
+
