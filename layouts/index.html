@@ -1,33 +1,42 @@
 {{ partial "header.html" . }}
 
+<section id="mailinglist">
+    <div class="container">
+        <h2>Interested? We'll keep you up to date!</h2>
+
+        <p>
+            Are you interested in attending or speaking at RocketConf? Please, sign up for
+            our mailing list and we will notify you of important news updates.
+        </p>
+
+        <form action="http://newsletter.kabisa.nl/t/r/s/jjuisk/" method="post" id="subForm" class="cf">
+            <input id="fieldEmail" name="cm-jjuisk-jjuisk" type="email" required placeholder="Subscribe for updates..." />
+            <button class="btn" type="submit">Subscribe</button>
+        </form>
+    </div>
+</section>
 
 <section id="venue">
     <div class="container">
         <h2>Venue - Pakhuis de Zwijger</h2>
+    </div>
 
-        <div class="column">
-            <img src="/img/pakhuis-de-zwijger.jpg" alt="Pakhuis de Zwijger, Amsterdamn" class="venue-zwijger">
-        </div>
+    <div class="map-container">
+        <div id='venue-map'></div>
+        <div id='venue-container'>
+            <div id='venue-float'>
+                <h2>Pakhuis de Zwijger</h2>
 
-        <div class="column">
-            <p>
-                RocketConf is hosted by <strong>Pakhuis de Zwijger</strong> in Amsterdam,
-                The Netherlands.
-            </p>
+                <img src="/img/pakhuis-de-zwijger.jpg" alt="Pakhuis de Zwijger, Amsterdamn" class="venue-zwijger">
 
-            <p>
-                <strong>Address</strong>
-                <br />
-                Piet Heinkade 179
-                <br />
-                1019 HC Amsterdam
-                <br />
-                <a href="https://www.google.com/maps/place/Pakhuis+De+Zwijger,+Piet+Heinkade+179,+1019+HC+Amsterdam,+Netherlands/@52.37667,4.922122,13z/data=!4m2!3m1!1s0x47c609a80e2c8a2f:0x2d9e404fc8f71f8d" target="_blank">View on Google Maps</a>
-            </p>
-
-            <p>
-                <a href="http://www.dezwijger.nl/attachment/86926/">Download directions in PDF (provided by Pakhuis de Zwijger)</a>
-            </p>
+                <p>
+                    Piet Heinkade 179
+                    <br />
+                    1019HC Amsterdam
+                    <br />
+                    The Netherlands
+                </p>
+            </div>
         </div>
     </div>
 </section>
@@ -86,5 +95,28 @@
 
     </div>
 </section>
+
+<script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
+    <script>
+        var map;
+        function initialize() {
+          var venue = new google.maps.LatLng(52.37667,4.922122);
+          var center = new google.maps.LatLng(52.37667,5.522122);
+          var mapOptions = {
+            zoom: 9,
+            center: center,
+            scrollwheel: false
+          };
+          map = new google.maps.Map(document.getElementById('venue-map'),
+              mapOptions);
+          var marker = new google.maps.Marker({
+              position: venue,
+              map: map,
+              title: 'Meh'
+          });
+        }
+
+        google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
 
 {{ partial "footer.html" . }}
