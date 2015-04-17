@@ -310,3 +310,20 @@ section#sponsors h3 {
     font-size: 1.3em;
 }
 
+body.launchit {
+    height: 100%;
+    width: 100%;
+    background-color: #28abe2;
+}
+
+body.launchit header.header {
+    width: 100%;
+    height: 100%;
+    padding-top: 5em;
+}
+
+body.launchit #subscribe {
+    background-color: #ffffff;
+    padding: 1em;
+    border-radius: 0.7em;
+}
