@@ -1,70 +1,159 @@
-<!DOCTYPE html>
-<html lang="en">
+{{ partial "header.html" . }}
 
-<head>
-    <meta charset="utf-8">
-    <meta content="text/html;charset=utf-8" http-equiv="content-type">
-    <base href="http://localhost:1313/">
-    <title>{{ .Site.Title }}</title>
-    <meta content="IE=edge" http-equiv="X-UA-Compatible">
-    <meta content="width=device-width,initial-scale=1.0" name="viewport">
-    <meta content="RocketConf Launch Control" name="author">
-    <meta content="RocketConf 2015 is a Full Stack Ruby conference on 11-13 November 2015 in Amsterdam, The Netherlands" name="description">
+<section id="about">
+    <div class="container">
+        <h2>Awesome! You're here!</h2>
+        <p>
+            This November we will bring you <strong>RocketConf</strong>, a three-day
+            developer conference for anyone who loves writing beatiful code and creating
+            magnificent things that matter.
+        </p>
 
-    <link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-180x180.png">
-    <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
-    <link rel="icon" type="image/png" href="/favicon-194x194.png" sizes="194x194">
-    <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96">
-    <link rel="icon" type="image/png" href="/android-chrome-192x192.png" sizes="192x192">
-    <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
-    <link rel="manifest" href="/manifest.json">
-    <meta name="msapplication-TileColor" content="#29abe2">
-    <meta name="msapplication-TileImage" content="/mstile-144x144.png">
-    <meta name="theme-color" content="#29abe2">
+        <p>
+            Over the course of three days you may participate in one of the workshops, and
+            enjoy a diverse selection of talks during the two-day, single-track conference days.
+        </p>
 
-    <script src="//use.typekit.net/vxq2mtr.js"></script>
-    <script>
-    try {
-        Typekit.load();
-    } catch (e) {}
-    </script>
-    <link href="/css/rocketconf.css" rel="stylesheet" type="text/css">
-</head>
+        <p>
+            Want us to keep you up to date on new speakers, ticket sales and other important
+            things? Follow <a href="https://twitter.com/RocketConf">@RocketConf</a> or subscribe
+            to our mailinglist.
+        </p>
 
-<body class="launchit">
-    <header class="header">
-        <div class="container">
-            <div>
-                <h1><a href="/"><img src="/img/rocketconf-logo.svg" alt="Rocket Conf logo">RocketConf</a></h1>
-                <div class="meta">
-                    11 – 13 November, 2015
+        <form action="http://newsletter.kabisa.nl/t/r/s/jjuisk/" method="post" id="subForm" class="cf">
+            <input id="fieldEmail" name="cm-jjuisk-jjuisk" type="email" required placeholder="Subscribe for updates..." />
+            <button class="btn" type="submit">Subscribe</button>
+        </form>
+    </div>
+</section>
+
+<section id="call-for-proposals">
+    <div class="container">
+        <h2>Speakers</h2>
+
+        <p>
+            We're currently in touch with some possible key note speakers. We can't give you
+            any details yet, but they are <strong>phenomenal</strong>. Promise!
+        </p>
+    </div>
+</section>
+
+<section id="call-for-proposals">
+    <div class="container">
+        <h2>Call for Proposals</h2>
+
+            <p>
+            Do you have something to say? Want to get in front of your peers and share
+            what you've learned? This is your chance to shine!
+            </p>
+
+            <p>
+            Please submit your proposal for a <strong>talk</strong> or <strong>workshop</strong>
+            before <strong>1 August 2015</strong>. Do it today!
+            </p>
+
+            <p class='centered'><a href="http://goo.gl/forms/onQ7gVWIhQ" class="btn">Submit a propsal</a></p>
+
+            <p>
+            In the light of our <a href="/code-of-conduct">Code of Conduct</a>
+            we want to give everyone a fair chance of speaking at RocketConf.
+            Submissions will be anonymized before being handed to the programme team, who will
+            make a selection based on the content of your proposal.
+            </p>
+    </div>
+</section>
+
+<section id="venue">
+    <div class="container">
+        <h2>Venue</h2>
+    </div>
+
+    <div class="map-container">
+        <div id='venue-map'></div>
+        <div id='venue-container'>
+            <div id='venue-float'>
+                <h2>Pakhuis de Zwijger</h2>
+
+                <img src="/img/pakhuis-de-zwijger.jpg" alt="Pakhuis de Zwijger, Amsterdamn" class="venue-zwijger">
+
+                <p>
+                    Piet Heinkade 179
                     <br />
-                    Amsterdam, The Netherlands
-                </div>
-                <div class="more-meta">
-                    <p>
-
-                    </p>
-
-                    <div id="subscribe">
-                        <form action="http://newsletter.kabisa.nl/t/r/s/jjuisk/" method="post" id="subForm" class="cf">
-                            <input id="fieldEmail" name="cm-jjuisk-jjuisk" type="email" required placeholder="Subscribe for updates..." />
-                            <button class="btn" type="submit">Subscribe</button>
-                        </form>
-                        or follow us via <a href="https://twitter.com/RocketConf">@RocketConf</a>
-                    </div>
-
-                </div>
+                    1019HC Amsterdam
+                    <br />
+                    The Netherlands
+                </p>
             </div>
         </div>
-    </header>
-</body>
-</html>
+    </div>
+</section>
+
+<section id="tickets">
+    <div class="container">
+        <h2>Tickets</h2>
+
+        <p>We're very busy getting everything organized. Tickets will go on sale soon! Keep an eye on <a href="https://twitter.com/rocketconf">@RocketConf</a>.</p>
+    </div>
+</section>
+
+<section id="sponsors">
+    <div class="container">
+        <h2>Sponsors</h2>
+        <p>
+            RocketConf would not be possible without the support of these <strong>awesome</strong> sponsors.
+        </p>
+        <p>
+            <a href="mailto:launchcontrol@rocketconf.eu?subject=Sponsorship">Get in touch</a> if you want more
+            info on sponsoring RocketConf.
+        </p>
+
+        <h3>Platinum Sponsors</h3>
+        <div class="sponsor-list">
+            <div class="sponsor">
+                <a href="http://kabisa.nl">
+                    <img src="img/sponsors/kabisa.png">
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="code-of-conduct">
+    <div class="container">
+        <h2>Code of Conduct</h2>
+        <p>
+             RocketConf is an inclusive conference. To us this is common sense, but we feel the need to explicitly tell
+             our speakers, sponsors and participants where we stand on this topic in our
+             <a href="/code-of-conduct">Code of Conduct</a>. Read it.
+        </p>
+
+        <p>
+            We know you are awesome. See you at RocketConf!
+        </p>
+    </div>
+</section>
+
+<script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
+    <script>
+        var map;
+        function initialize() {
+          var venue = new google.maps.LatLng(52.37667,4.922122);
+          var center = new google.maps.LatLng(52.37667,5.522122);
+          var mapOptions = {
+            zoom: 9,
+            center: center,
+            scrollwheel: false
+          };
+          map = new google.maps.Map(document.getElementById('venue-map'),
+              mapOptions);
+          var marker = new google.maps.Marker({
+              position: venue,
+              map: map,
+              title: 'Meh'
+          });
+        }
+
+        google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
+
+{{ partial "footer.html" . }}
