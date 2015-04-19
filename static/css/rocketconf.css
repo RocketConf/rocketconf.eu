@@ -13,6 +13,10 @@ body {
     line-height: 24px;
     color: #0e2b38;
 }
+input, button {
+    font-family: 'Exo 2', sans-serif;
+
+}
 
 .container {
     width: 42em;
@@ -138,18 +142,19 @@ header {
 }
 
 header h1 {
+    display: block;
     font-size: 7.6em;
-    padding-top: 0em;
-    padding-bottom: 0.5em;
+    padding: 0;
+    height: 400px;
+    height: 30vh;
 }
 
 header h1 img {
     display: block;
     border: none;
-    width: 320px;
+    height: 80%;
     text-align: center;
     margin: 0 auto 0.5em auto;
-    background: #fff;
 }
 
 header h1 a {
@@ -157,14 +162,16 @@ header h1 a {
     text-decoration: none;
 }
 
+.launchit .meta,
 header .meta {
     font-family: "alternate-gothic-no-2-d", sans-serif;
     display: block;
     color: #fff;
     font-size: 3em;
+    font-size: 5vh;
     margin-top: 1em;
     margin-bottom: 1em;
-    line-height: 1.2em;
+    line-height: 1;
 }
 
 header.header-single {
@@ -183,7 +190,7 @@ header.header-single h1 {
 header.header-single img {
     display: block;
     background: #fff;
-    width: 156px; 
+    width: 156px;
     float: left;
     margin-right: 0.4em;
 }
@@ -300,61 +307,70 @@ section#sponsors h3 {
 .cf input {
     height: 1.8em;
     width: 78%;
+    max-width: 13em;
     font-size: 1.4em;
     padding: 0.2em 0.5em;
 }
 
 .cf button {
     height: 2em;
-    width: 20%;
+    width: 6em;
     font-size: 1.3em;
 }
 
-body.launchit {
+.launchit {
     height: 100%;
     width: 100%;
     background-color: #28abe2;
 }
 
-body.launchit header.header {
-    width: 100%;
-    height: 100%;
-    padding-top: 5em;
+.launchit .container {
+    position: absolute;
+    top: 0;
+    right: 0.5em;
+    bottom: 0;
+    left: 0.5em;
+    width: auto;
+    text-align: center;
 }
-
-body.launchit #subscribe {
+.launchit .conf-title {
+    line-height: 1;
+    height: 200px;
+    height: 50vh;
+    padding: 0.25em 0;
+    font-size: 4em;
+    font-size: 14vh;
+}
+.launchit .conf-title img {
+    display: block;
+    margin: 0 auto;
+    height: 80%;
+}
+.launchit .conf-title a {
+    color: #0e2b38;
+    text-decoration: none;
+}
+.launchit .more-meta {
+    margin: 0 auto;
+    max-width: 30em;
+}
+#subscribe {
     background-color: #ffffff;
     padding: 1em;
     border-radius: 0.7em;
 }
 
 @media (max-width: 768px) {
-    .container {
-        width: 100%;
-        padding-left: 1em;
-        padding-right: 1em;
+    .launchit .conf-title {
+        height: 40vh;
     }
-
-    body.launchit img {
-        width: 200px;
-        height: 200px;
+    #subscribe {
+        font-size: 14px;
     }
-
-    body.launchit header.header {
-        padding-top: 2em;
-    }
-
-    header h1 {
-        font-size: 3em;
-    }
-
-    header .meta {
-        font-size: 1.4em;
-    }
-
     .cf input {
         display: block;
         width: 100%;
+        max-width: 100%;
         font-size: 1em;
         padding: 0.2em;
         border: 1px solid #d9d9d9;
