@@ -13,6 +13,10 @@ body {
     line-height: 24px;
     color: #0e2b38;
 }
+input, button {
+    font-family: 'Exo 2', sans-serif;
+
+}
 
 .container {
     width: 42em;
@@ -51,7 +55,6 @@ body {
 
 #venue-float img {
     width: 14em;
-    max-width: 14em;
 }
 
 #venue-float h2,
@@ -59,6 +62,9 @@ body {
     color: #fff;
 }
 
+#venue-float a {
+    color: #fff !important;
+}
 
 .container .column {
     display: inline-block;
@@ -138,18 +144,18 @@ header {
 }
 
 header h1 {
+    display: block;
     font-size: 7.6em;
-    padding-top: 0em;
-    padding-bottom: 0.5em;
+    padding: 0;
 }
 
 header h1 img {
     display: block;
     border: none;
+    height: 320px;
     width: 320px;
     text-align: center;
     margin: 0 auto 0.5em auto;
-    background: #fff;
 }
 
 header h1 a {
@@ -157,6 +163,7 @@ header h1 a {
     text-decoration: none;
 }
 
+.launchit .meta,
 header .meta {
     font-family: "alternate-gothic-no-2-d", sans-serif;
     display: block;
@@ -164,7 +171,7 @@ header .meta {
     font-size: 3em;
     margin-top: 1em;
     margin-bottom: 1em;
-    line-height: 1.2em;
+    line-height: 1;
 }
 
 header.header-single {
@@ -183,7 +190,7 @@ header.header-single h1 {
 header.header-single img {
     display: block;
     background: #fff;
-    width: 156px; 
+    width: 156px;
     float: left;
     margin-right: 0.4em;
 }
@@ -298,32 +305,118 @@ section#sponsors h3 {
 }
 
 .cf input {
-    height: 2em;
+    height: 1.8em;
     width: 78%;
+    max-width: 13em;
     font-size: 1.4em;
     padding: 0.2em 0.5em;
 }
 
 .cf button {
     height: 2em;
-    width: 20%;
+    width: 6em;
     font-size: 1.3em;
 }
 
-body.launchit {
+.launchit {
     height: 100%;
     width: 100%;
     background-color: #28abe2;
 }
 
-body.launchit header.header {
-    width: 100%;
-    height: 100%;
-    padding-top: 5em;
+.launchit .container {
+    position: absolute;
+    top: 0;
+    right: 0.5em;
+    bottom: 0;
+    left: 0.5em;
+    width: auto;
+    text-align: center;
 }
-
-body.launchit #subscribe {
+.launchit .conf-title {
+    line-height: 1;
+    height: 200px;
+    padding: 0.25em 0;
+    font-size: 4em;
+}
+.launchit .conf-title img {
+    display: block;
+    margin: 0 auto;
+    height: 80%;
+}
+.launchit .conf-title a {
+    color: #0e2b38;
+    text-decoration: none;
+}
+.launchit .more-meta {
+    margin: 0 auto;
+    max-width: 30em;
+}
+#subscribe {
     background-color: #ffffff;
     padding: 1em;
     border-radius: 0.7em;
 }
+
+@media (max-width: 767px) {
+    .container {
+        width: 100%;
+        margin: 0;
+        padding: 0 0.5em;
+    }
+
+    header img {
+        width: 200px;
+        height: 200px !important;
+    }
+
+    header h1 {
+        font-size: 3em;
+    }
+
+    header .meta {
+        font-size: 1.4em;
+    }
+
+    .map-container #venue-map {
+        display: none;
+    }
+
+    .map-container #venue-container {
+        position: static;
+        width: 100%;
+    }
+
+    .map-container #venue-float {
+        position: static;
+        color: #ffffff;
+        background-color: none;
+        padding: 1.5em 0.5em;
+    }
+
+    .map-container #venue-float img {
+        display: none;
+    }
+
+    #subscribe {
+        font-size: 14px;
+    }
+
+    .cf input {
+        display: block;
+        width: 100%;
+        max-width: 100%;
+        font-size: 1em;
+        padding: 0.2em;
+        border: 1px solid #d9d9d9;
+        height: 1.8em;
+    }
+
+    .cf button {
+        display: block;
+        height: 2.4em;
+        width: 100%;
+        font-size: 1em;
+    }
+}
+

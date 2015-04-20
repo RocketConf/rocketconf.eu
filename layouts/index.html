@@ -27,7 +27,7 @@
     </div>
 </section>
 
-<section id="call-for-proposals">
+<section id="speakers">
     <div class="container">
         <h2>Speakers</h2>
 
@@ -82,6 +82,8 @@
                     1019HC Amsterdam
                     <br />
                     The Netherlands
+                    <br / >
+                    <a href="https://www.google.nl/maps/place/Pakhuis+De+Zwijger/@52.3730262,4.9049152,14z/data=!4m2!3m1!1s0x47c609a80e2c8a2f:0x2d9e404fc8f71f8d" target="_blank">View on maps &raquo;</a>
                 </p>
             </div>
         </div>
@@ -138,11 +140,14 @@
         var map;
         function initialize() {
           var venue = new google.maps.LatLng(52.37667,4.922122);
-          var center = new google.maps.LatLng(52.37667,5.522122);
+          var center = new google.maps.LatLng(52.37667,4.942122);
           var mapOptions = {
-            zoom: 9,
+            zoom: 13,
             center: center,
-            scrollwheel: false
+            scrollwheel: false,
+            disableDefaultUI: true,
+            disableDoubleClickZoom: true,
+            draggable: false
           };
           map = new google.maps.Map(document.getElementById('venue-map'),
               mapOptions);
