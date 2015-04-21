@@ -55,7 +55,6 @@ input, button {
 
 #venue-float img {
     width: 14em;
-    max-width: 14em;
 }
 
 #venue-float h2,
@@ -63,6 +62,9 @@ input, button {
     color: #fff;
 }
 
+#venue-float a {
+    color: #fff !important;
+}
 
 .container .column {
     display: inline-block;
@@ -145,14 +147,13 @@ header h1 {
     display: block;
     font-size: 7.6em;
     padding: 0;
-    height: 400px;
-    height: 30vh;
 }
 
 header h1 img {
     display: block;
     border: none;
-    height: 80%;
+    height: 320px;
+    width: 320px;
     text-align: center;
     margin: 0 auto 0.5em auto;
 }
@@ -168,7 +169,6 @@ header .meta {
     display: block;
     color: #fff;
     font-size: 3em;
-    font-size: 5vh;
     margin-top: 1em;
     margin-bottom: 1em;
     line-height: 1;
@@ -336,10 +336,8 @@ section#sponsors h3 {
 .launchit .conf-title {
     line-height: 1;
     height: 200px;
-    height: 50vh;
     padding: 0.25em 0;
     font-size: 4em;
-    font-size: 14vh;
 }
 .launchit .conf-title img {
     display: block;
@@ -360,13 +358,50 @@ section#sponsors h3 {
     border-radius: 0.7em;
 }
 
-@media (max-width: 768px) {
-    .launchit .conf-title {
-        height: 40vh;
+@media (max-width: 767px) {
+    .container {
+        width: 100%;
+        margin: 0;
+        padding: 0 0.5em;
     }
+
+    header img {
+        width: 200px;
+        height: 200px !important;
+    }
+
+    header h1 {
+        font-size: 3em;
+    }
+
+    header .meta {
+        font-size: 1.4em;
+    }
+
+    .map-container #venue-map {
+        display: none;
+    }
+
+    .map-container #venue-container {
+        position: static;
+        width: 100%;
+    }
+
+    .map-container #venue-float {
+        position: static;
+        color: #ffffff;
+        background-color: none;
+        padding: 1.5em 0.5em;
+    }
+
+    .map-container #venue-float img {
+        display: none;
+    }
+
     #subscribe {
         font-size: 14px;
     }
+
     .cf input {
         display: block;
         width: 100%;
