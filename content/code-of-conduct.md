@@ -8,7 +8,7 @@ tl;dr: Be excellent with each other
 
 ### Need Help?
 
-You have our contact details in the emails we've sent.
+Mail us a <a href="launchcontrol@rocketconf.eu">launchcontrol@rocketconf.eu</a> or call or text <a href="tel:0031617103624">+31 (0)617 103 624</a>.
 
 ### The Quick Version
 
