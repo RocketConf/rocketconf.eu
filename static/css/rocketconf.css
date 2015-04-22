@@ -138,24 +138,49 @@ ul.dates li {
 
 header {
     background-color: #29abe2;
-    padding-top: 2em;
-    padding-bottom: 3em;
-    text-align: center;
+    background-image: url('/img/ams-04.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left center;
+    text-align: left;
+    position: relative;
+    height: 100vh;
 }
 
-header h1 {
+header #brand {
     display: block;
-    font-size: 7.6em;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 75%;
+
+    padding: 0;
+    margin: 3em 0;
+    background-color: #29abe2;
+
+    border-top-left-radius: 3em;
+    border-bottom-left-radius: 3em;
+}
+
+header #brand h1 {
+    position: relative;
+    font-size: 8em;
+    margin: 0.8em 0 0 0;
     padding: 0;
 }
 
-header h1 img {
+header #brand h1,
+header #brand .meta {
+    margin-left: 220px;
+}
+
+header #brand img {
     display: block;
     border: none;
-    height: 320px;
-    width: 320px;
-    text-align: center;
-    margin: 0 auto 0.5em auto;
+    height: 20em;
+    width: 20em;
+    float: left;
+    padding: 2em;
 }
 
 header h1 a {
@@ -166,9 +191,8 @@ header h1 a {
 .launchit .meta,
 header .meta {
     font-family: "alternate-gothic-no-2-d", sans-serif;
-    display: block;
     color: #fff;
-    font-size: 3em;
+    font-size: 3.2em;
     margin-top: 1em;
     margin-bottom: 1em;
     line-height: 1;
