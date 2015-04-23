@@ -137,55 +137,57 @@ ul.dates li {
 
 
 header {
-    background-color: #29abe2;
     background-image: url('/img/ams-04.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: left center;
     text-align: left;
     position: relative;
+    height: 30em;
     height: 100vh;
 }
 
-header #brand {
+#brand {
     display: block;
     position: absolute;
     right: 0;
-    bottom: 0;
+    bottom: 3em;
     width: 75%;
-
-    padding: 0;
-    margin: 3em 0;
-    background-color: #29abe2;
-
-    border-top-left-radius: 3em;
-    border-bottom-left-radius: 3em;
+    min-width: 48em;
+    height: 20em;
+    padding-left: 20em;
 }
-
-header #brand h1 {
+#brand .meta {
+    margin: 0;
+}
+#brand .inner-header {
+    background-color: #29abe2;
+    height: 100%;
+}
+#brand h1 {
     position: relative;
     font-size: 8em;
-    margin: 0.8em 0 0 0;
+    margin: 0;
     padding: 0;
+    padding-top: 0.35em;
+    line-height: 1;
 }
-
-header #brand h1,
-header #brand .meta {
-    margin-left: 220px;
-}
-
-header #brand img {
+#brand img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: #29abe2;
     display: block;
     border: none;
-    height: 20em;
-    width: 20em;
-    float: left;
+    height: 100%;
     padding: 2em;
+    border-radius: 50% 0 0 50%;
 }
-
-header h1 a {
+header h1 a,
+header h1 a:hover {
     color: #0e2b38;
     text-decoration: none;
+    border: none;
 }
 
 .launchit .meta,
