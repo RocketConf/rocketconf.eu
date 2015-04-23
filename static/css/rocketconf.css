@@ -137,38 +137,77 @@ ul.dates li {
 
 
 header {
-    background-color: #29abe2;
-    padding-top: 2em;
-    padding-bottom: 3em;
-    text-align: center;
+    background-image: url('/img/ams-04.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left center;
+    text-align: left;
+    position: relative;
+    height: 30em;
+    height: 100vh;
 }
 
-header h1 {
+#brand {
     display: block;
-    font-size: 7.6em;
-    padding: 0;
+    position: absolute;
+    right: 0;
+    bottom: 3em;
+    width: 75%;
+    min-width: 48em;
+    height: 20em;
+    padding-left: 20em;
 }
-
-header h1 img {
+#brand .meta {
+    margin: 0;
+}
+#brand .inner-header {
+    background-color: #29abe2;
+    height: 100%;
+}
+#brand h1 {
+    position: relative;
+    font-size: 8em;
+    margin: 0;
+    padding: 0;
+    padding-top: 0.35em;
+    line-height: 1;
+}
+#brand img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: #29abe2;
     display: block;
     border: none;
-    height: 320px;
-    width: 320px;
-    text-align: center;
-    margin: 0 auto 0.5em auto;
+    height: 100%;
+    padding: 2em;
+    border-radius: 50% 0 0 50%;
+}
+@media (max-width: 55em) {
+    #brand {
+        font-size: 0.5em;
+    }
+}
+@media (max-width: 30em) {
+    #brand {
+        font-size: 0.4em;
+    }
 }
 
-header h1 a {
+
+
+header h1 a,
+header h1 a:hover {
     color: #0e2b38;
     text-decoration: none;
+    border: none;
 }
 
 .launchit .meta,
 header .meta {
     font-family: "alternate-gothic-no-2-d", sans-serif;
-    display: block;
     color: #fff;
-    font-size: 3em;
+    font-size: 3.2em;
     margin-top: 1em;
     margin-bottom: 1em;
     line-height: 1;
@@ -365,16 +404,16 @@ section#sponsors h3 {
         padding: 0 0.5em;
     }
 
-    header img {
+    .header-single img {
         width: 200px;
         height: 200px !important;
     }
 
-    header h1 {
+    .header-single h1 {
         font-size: 3em;
     }
 
-    header .meta {
+    .header-single .meta {
         font-size: 1.4em;
     }
 
