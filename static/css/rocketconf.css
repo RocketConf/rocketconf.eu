@@ -323,6 +323,11 @@ section#sponsors h3 {
   border: 0;
 }
 
+.btn-big {
+    font-size: 24px;
+    padding: 20px 40px 20px 40px;
+}
+
 .btn:hover {
   background: #0e2b38;
   text-decoration: none;
@@ -459,3 +464,21 @@ section#sponsors h3 {
     }
 }
 
+.speaker-info {
+    width: 30%;
+    float: left;
+    margin-right: 3%; 
+}
+
+.speaker-avatar img {
+    width: 100%;
+}
+
+.speaker-details {
+    font-size: 82%;
+    text-align: justify;
+}
+
+.clear {
+    clear: both;
+}
