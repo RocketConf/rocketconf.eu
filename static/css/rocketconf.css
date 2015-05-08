@@ -147,6 +147,26 @@ header {
     height: 100vh;
 }
 
+.single header {
+    height: 12em;
+    height: 40vh;
+}
+
+.single header #brand {
+    height: 10em;
+    padding-left: 10em;
+    width: 25%;
+    min-width: 32em;
+}
+
+.single header #brand h1 {
+    font-size: 4em;
+}
+
+.single header #brand .meta {
+    font-size: 1.8em;
+}
+
 #brand {
     display: block;
     position: absolute;
@@ -211,35 +231,6 @@ header .meta {
     margin-top: 1em;
     margin-bottom: 1em;
     line-height: 1;
-}
-
-header.header-single {
-    padding-top: 0.5em;
-    padding-bottom: 1.5em;
-}
-
-header.header-single h1 {
-    font-size: 5em;
-    line-height: 1.2em;
-    text-align: left;
-    padding-bottom: 0;
-    margin-left: 175px;
-}
-
-header.header-single img {
-    display: block;
-    background: #fff;
-    width: 156px;
-    float: left;
-    margin-right: 0.4em;
-}
-
-header.header-single .meta {
-    padding: 0;
-    margin: 0 0 0 175px;
-    font-size: 1.6em;
-    line-height: 1em;
-    text-align: left;
 }
 
 nav.main {
