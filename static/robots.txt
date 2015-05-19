@@ -1,0 +1,28 @@
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: BLEXBot
+Disallow: /
+
+User-agent: Ezooms
+Disallow: /
+
+User-agent: JobdiggerSpider
+Disallow: /
+
+User-agent: Mail.Ru
+Disallow: /
+
+User-Agent: MJ12bot
+Disallow: /
+
+User-agent: SEOkicks-Robot
+Disallow: /
+
+User-agent: *
+Disallow:
+
+Sitemap: http://www.rocketconf.eu/sitemap.xml 
+
+
+
