@@ -8,14 +8,13 @@
 }
 
 body {
-    font-family: 'Exo 2', sans-serif;
+    font-family: 'Exo 2', "Lucida Grande", "Helvetica Neue", Helvetica, sans-serif;
     font-size: 18px;
     line-height: 24px;
     color: #0e2b38;
 }
 input, button {
-    font-family: 'Exo 2', sans-serif;
-
+    font-family: 'Exo 2', "Lucida Grande", "Helvetica Neue", Helvetica, sans-serif;
 }
 
 .container {
@@ -113,7 +112,7 @@ a:hover {
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: "alternate-gothic-no-2-d";
+    font-family: "alternate-gothic-no-2-d", "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
     font-weight: bold;
     color: #29abe2;
 }
@@ -225,7 +224,7 @@ header h1 a:hover {
 
 .launchit .meta,
 header .meta {
-    font-family: "alternate-gothic-no-2-d", sans-serif;
+    font-family: "alternate-gothic-no-2-d", "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
     color: #fff;
     font-size: 3.2em;
     margin-top: 1em;
@@ -234,7 +233,7 @@ header .meta {
 }
 
 nav.main {
-    font-family: "alternate-gothic-no-2-d", sans-serif;
+    font-family: "alternate-gothic-no-2-d", "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
     margin-top: 3em;
     margin-bottom: 3em;
     text-align: center;
