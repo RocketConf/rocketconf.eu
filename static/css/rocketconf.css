@@ -360,20 +360,27 @@ section#sponsors h3 {
   padding: 1em;
   border-radius: 0.7em;
 }
+
 .speaker-info {
-  width: 30%;
-  float: left;
-  margin-right: 3%;
+    clear: left;
+    padding-top: 1em;
 }
+
 .speaker-avatar img {
-  width: 100%;
-  border-radius: 1em;
+    float: left;
+    width: 10em;
+    border-radius: 1em;
 }
+
+.speaker-name,
 .speaker-details {
-  margin-top: 1em;
-  font-size: 82%;
-  text-align: justify;
+    margin-left: 11em;
 }
+
+#speaker-announcement {
+    padding-top: 1em;
+}
+
 @media (max-width: 767px) {
   .container {
     width: 95%;
@@ -450,15 +457,19 @@ section#sponsors h3 {
   }
   .speaker-info {
     width: 95%;
-    float: left;
     margin-right: 3%;
   }
   .speaker-avatar img {
-    width: 100%;
+    width: 6em;
+    margin-right: 1em;
     border-radius: 1em;
   }
+  .speaker-name,
   .speaker-details {
-    font-size: 95%;
+    margin-left: 0;
+  }
+  .speaker-name {
+      margin-bottom: 1em;
   }
 }
 .clear {
