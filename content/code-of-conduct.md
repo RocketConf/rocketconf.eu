@@ -1,20 +1,32 @@
 ---
-title: Code of Conduct
+title: "Code of Conduct"
 ---
+
+<main class="">
+
+<section class="splash">
+  <div class="stars"></div>
+</section>
+
+<section class="code-of-conduct-page">
+
+<a href="/"><img src="/img/rocketconf-logo.svg" alt="" class="standalone-logo"></a>
+
+# Code of conduct
 
 All attendees, speakers, sponsors and volunteers at our conference are required to agree with the following code of conduct. Organisers will enforce this code throughout the event. We are expecting cooperation from all participants to help ensuring a safe environment for everybody.
 
-tl;dr: Be excellent with each other
+tl;dr: Be excellent to each other.
 
-### Need Help?
+## Need Help?
 
 Mail us a <a href="launchcontrol@rocketconf.eu">launchcontrol@rocketconf.eu</a> or call or text <a href="tel:0031617103624">+31 (0)617 103 624</a>.
 
-### The Quick Version
+## The Quick Version
 
 Our conference is dedicated to providing a harassment-free conference experience for everyone, regardless of gender, gender identity and expression, age, sexual orientation, disability, physical appearance, body size, race, or religion (or lack thereof). We do not tolerate harassment of conference participants in any form. Sexual language and imagery is not appropriate for any conference venue, including talks, workshops, parties, Twitter and other online media. Conference participants violating these rules may be sanctioned or expelled from the conference without a refund at the discretion of the conference organisers.
 
-### The Less Quick Version
+## The Less Quick Version
 
 Harassment includes offensive verbal comments related to gender, gender identity and expression, age, sexual orientation, disability, physical appearance, body size, race, religion, sexual images in public spaces, deliberate intimidation, stalking, following, harassing photography or recording, sustained disruption of talks or other events, inappropriate physical contact, and unwelcome sexual attention.
 
@@ -31,3 +43,8 @@ Conference staff will be happy to help participants contact hotel/venue security
 We expect participants to follow these rules at conference and workshop venues and conference-related social events.
 
 Thank you for being awesome!
+
+<p class="center-text"><a href="/" class="button">Back to the website</a></p>
+
+</section>
+</main>
