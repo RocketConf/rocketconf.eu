@@ -36,17 +36,18 @@ h2 {
   font-size: 3em;
 }
 h3 {
-  font-size: 1.5em;
+  font-size: 2em;
 }
 h4 {
   font-size: 1em;
 }
 h1, h2, h3, h4 {
-  font-family: 'alternate-gothic-no-2-d', sans-serif;
+  font-family: 'komu-a', sans-serif;
   text-transform: uppercase;
   margin-bottom: 0.5em;
   color: #29abe2;
   text-align: center;
+  font-weight: normal;
 }
 p {
   line-height: 1.5;
@@ -72,9 +73,9 @@ ul {
   color: #fff;
   text-align: center;
   display: inline-block;
-  padding: 0.25em 1.5em;
+  padding: 0.5em 1.5em 0.25em 1.5em;
   border-radius: 3px;
-  font-family: 'alternate-gothic-no-2-d', sans-serif;
+  font-family: 'komu-a', sans-serif;
   font-size: 1.5em;
   margin: 0 auto;
   border: 0;
@@ -156,7 +157,7 @@ ul {
   }
 }
 .scroll-down {
-  font-family: 'alternate-gothic-no-2-d', sans-serif;
+  font-family: 'komu-a', sans-serif;
   position: absolute;
   bottom: 4vh;
   line-height: 2;
@@ -206,8 +207,7 @@ ul {
 .who-what-where h2 {
   color: black;
   font-size: 1.5em;
-}
-.who-what-where p {
+  margin-bottom: 0.1em;
 }
 .who-what-where img {
   height: 1em;
@@ -284,7 +284,7 @@ ul {
   line-height: 1;
 }
 .amsterdam blockquote {
-  font-family: 'alternate-gothic-no-2-d', sans-serif;
+  font-family: 'komu-a', sans-serif;
   font-size: 3em;
   color: #fff;
   text-shadow: 0 0 14px rgba(0,0,0,0.7);
@@ -496,7 +496,6 @@ ul {
   padding-top: 2em;
 }
 
-
 @media (max-width: 60em) {
   .venue h2 {
     text-align: left;
@@ -510,6 +509,15 @@ ul {
   }
 }
 @media (max-width: 50em) {
+  h1 {
+    font-size: 3em;
+  }
+  h2 {
+    font-size: 2em;
+  }
+  h3 {
+    font-size: 1.5em;
+  }
   .speakers li:nth-child(n) {
     width: 100%;
     float: none;
@@ -567,15 +575,6 @@ ul {
   section {
     padding: 2em 1em;
   }
-  h1 {
-    font-size: 3em;
-  }
-  h2 {
-    font-size: 2em;
-  }
-  h3 {
-    font-size: 1.5em;
-  }
   .who-what-where h1 {
     font-size: 3em;
     line-height: 1;
@@ -611,7 +610,6 @@ ul {
   }
 }
 @media (max-width: 25em) {
-
   #venue-map {
     margin-bottom: 16em;
   }
