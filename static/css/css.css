@@ -11,12 +11,10 @@ html {
 /**
  * Actual styling
  */
-/*@import url(http://fonts.googleapis.com/css?family=Exo+2:400,700);*/
-@import url(http://fonts.googleapis.com/css?family=Gentium+Basic:400,700);
 body {
   background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
   background-color: #000;
-  font-family: 'Gentium Basic', serif;
+  font-family: 'ff-tisa-web-pro', serif;
   font-size: 24px;
 }
 input, table {
@@ -25,19 +23,23 @@ input, table {
 }
 section {
   position: relative;
+  padding: 3em;
 }
 article {
   max-width: 40em;
   margin: 0 auto;
 }
 h1 {
-  font-size: 3em;
+  font-size: 5em;
 }
 h2 {
   font-size: 3em;
 }
 h3 {
   font-size: 1.5em;
+}
+h3 {
+  font-size: 1em;
 }
 h1, h2, h3, h4 {
   font-family: 'alternate-gothic-no-2-d', sans-serif;
@@ -98,11 +100,13 @@ ul {
   height: 100%;
   overflow: hidden;
   perspective: 340px;
+  padding: 0 1em;
 }
 .logo {
   display: block;
   margin: 0 auto;
   height: 50vh;
+  max-width: 100%;
   margin-top: 25vh;
   opacity: 0;
   transform: scale(0) rotate(-90deg);
@@ -192,13 +196,11 @@ ul {
   margin-top: 98vh;
   background: white;
   box-shadow: 0 0 2em 1em rgba(0, 0, 0, 0.5);
-  padding: 3em;
 }
 .who-what-where {
   text-align: center;
 }
 .who-what-where h1 {
-  font-size: 5em;
   margin: 0;
 }
 .who-what-where h2 {
@@ -211,27 +213,19 @@ ul {
   height: 1em;
   vertical-align: -0.15em;
 }
-.who-what-where span {
-  position: relative;
-}
-.who-what-where span::before {
-  content: '';
-  display: block;
-  position: absolute;
-  bottom: -3em;
-  border-bottom: 1px dashed #d8d8d8;
-  left: 50%;
-  margin-left: -150px;
-  width: 300px;
-}
 .welcome {
-  margin-top: 6em;
+  margin-top: 3.5em;
+  padding-top: 3em;
+  border-top: 1px dashed #d8d8d8;
 }
 
 
 /**
  * Programme
  */
+.programme {
+  padding: 0;
+}
 .programme-title {
   background-color: #fff;
   padding: 3em;
@@ -242,7 +236,6 @@ ul {
 .programme .day {
   max-width: 100%;
   background-color: #fff;
-  padding: 3em;
 }
 .programme .day-one,
 .programme .day-three {
@@ -250,6 +243,7 @@ ul {
 }
 .programme .inner {
   max-width: 40em;
+  padding: 3em;
   margin: 0 auto;
   position: relative;
   padding-left: 6em;
@@ -267,10 +261,10 @@ ul {
   line-height: 1;
   border-radius: 50%;
 }
-.programme .date strong {
+.programme .date span {
   display: block;
   font-size: 2em;
-  padding-top: 0.25em;
+  padding-top: 0.1em;
 }
 .programme h3 {
   text-align: left;
@@ -297,7 +291,6 @@ ul {
   max-width: 40em;
   margin: 0 auto;
   position: absolute;
-  /*top: 70%;*/
   left: 0;
   right: 0;
   bottom: -0.25em;
@@ -310,7 +303,6 @@ ul {
  */
 .speakers {
   background-color: #fff;
-  padding: 3em;
 }
 .speakers li {
   position: relative;
@@ -354,7 +346,6 @@ ul {
 .tickets {
  background-color: #29abe2;
  color: #fff;
- padding: 3em;
 }
 .tickets h2 {
   color: #fff;
@@ -368,6 +359,7 @@ ul {
  * Venue
  */
 .venue {
+  padding: 0;
   position: relative;
 }
 #venue-map {
@@ -413,11 +405,9 @@ ul {
  */
 .code-of-conduct {
   background-color: #fff;
-  padding: 3em;
 }
 .code-of-conduct-page {
   background-color: #fff;
-  padding: 3em;
   margin-top: 5em;
   margin-bottom: 5em;
 }
@@ -433,7 +423,6 @@ ul {
 .contact {
   background-color: #29abe2;
   color: #fff;
-  padding: 3em;
   text-align: center;
   z-index: 2;
 }
@@ -466,13 +455,15 @@ ul {
   background-color: #fff;
   color: #29abe2;
 }
+.mailinglist-submit {
+  display: none;
+}
 
 /**
  * Sponsors
  */
 .sponsors {
   background-color: #fff;
-  padding: 3em;
   margin-bottom: 95vh;
   box-shadow: 0 0 2em 1em rgba(0, 0, 0, 0.5);
 
@@ -502,4 +493,137 @@ ul {
 }
 .sponsor-rocketconf {
   padding-top: 2em;
+}
+
+
+@media (max-width: 60em) {
+  .venue h2 {
+    text-align: left;
+    padding-left: 1em;
+  }
+  .programme .date {
+    left: 2em;
+  }
+  .programme .inner {
+    padding-left: 8em;
+  }
+}
+@media (max-width: 50em) {
+  .speakers li:nth-child(n) {
+    width: 100%;
+    float: none;
+    padding: 0 0 3em 0;
+  }
+  .speakers li img {
+    width: 60%;
+    margin-left: 20%;
+  }
+  .contact article > div:first-child,
+  .contact article > div:last-child {
+    width: 100%;
+    float: none;
+    border: 0;
+    padding: 0;
+  }
+  .contact article > div:first-child {
+    padding-bottom: 3em;
+  }
+  #venue-map {
+    margin-bottom: 10em;
+  }
+  .venue-float {
+    bottom: -10em;
+    height: 10em;
+    left: 0;
+    right: 0;
+    top: auto;
+    width: auto;
+  }
+  .venue h2 {
+    text-align: center;
+    padding: 0;
+  }
+  .venue-float {
+    text-align: center;
+  }
+  .venue-float img {
+    max-height: 6em;
+    width: auto;
+    display: inline-block;
+    vertical-align: top;
+  }
+  .venue p {
+    display: inline-block;
+    margin: 0;
+    text-align: left;
+    padding-left: 1em;
+  }
+}
+@media (max-width: 32em) {
+  body {
+    font-size: 18px;
+  }
+  section {
+    padding: 2em 1em;
+  }
+  h1 {
+    font-size: 3em;
+  }
+  h2 {
+    font-size: 2em;
+  }
+  h3 {
+    font-size: 1.5em;
+  }
+  .who-what-where h1 {
+    font-size: 3em;
+    line-height: 1;
+  }
+  .who-what-where h2 {
+    margin: 0.5em 0;
+  }
+  .who-what-where img {
+    height: 3em;
+    display: block;
+    margin: 0 auto 0.5em auto;
+  }
+  .amsterdam blockquote {
+    bottom: 1.25em;
+    left: 0.2em;
+    right: 0.2em;
+  }
+  .programme h3 {
+    text-align: center;
+    margin-top: 0.5em;
+  }
+  .programme .inner {
+    padding: 2em 1em 1em 1em;
+  }
+  .programme .date {
+    position: relative;
+    margin: 0 auto;
+    left: 0;
+  }
+  .mailinglist-submit {
+    display: block;
+    margin-top: 0.5em;
+  }
+}
+@media (max-width: 25em) {
+
+  #venue-map {
+    margin-bottom: 16em;
+  }
+  .venue-float {
+    bottom: -16em;
+    height: 16em;
+  }
+  .venue-float img {
+    display: block;
+    margin: 0 auto;
+  }
+  .venue-float p {
+    text-align: center;
+    padding: 1em 0 0 0;
+  }
 }
