@@ -23,6 +23,7 @@ input, table {
   font-size: inherit;
 }
 section {
+  -webkit-transform: translate3d(0,0,0);
   position: relative;
   padding: 3em;
 }
@@ -102,6 +103,7 @@ ul {
   height: 100%;
   overflow: hidden;
   perspective: 340px;
+  -webkit-perspective: 340px;
   padding: 0 1em;
 }
 .logo {
@@ -137,6 +139,7 @@ ul {
   animation: fly 6s linear infinite;
   -webkit-animation: fly 6s linear infinite;
   transform-style: preserve-3d;
+  -webkit-transform-style: preserve-3d;
 }
 .stars::before,
 .stars::after {
@@ -148,10 +151,11 @@ ul {
 }
 .stars::before {
   transform: translateZ(-300px);
+  -webkit-transform: translateZ(-300px);
   opacity: .6;
 }
 .stars::after {
-  transform: translateZ(-600px);
+  -webkit-transform: translateZ(-600px);
   opacity: .4;
 }
 @keyframes fly {
@@ -166,11 +170,11 @@ ul {
 }
 @-webkit-keyframes fly {
   from {
-    transform: translateZ(0px);
+    -webkit-transform: translateZ(0px);
     opacity: .6;
   }
   to {
-    transform: translateZ(300px);
+    -webkit-transform: translateZ(300px);
     opacity: 1;
   }
 }
