@@ -251,7 +251,7 @@
         if (callNow) func.apply(context, args);
       };
     };
-    var myEfficientFn = debounce(function() {
+    var arrowize = debounce(function() {
       var d = Math.max(document.documentElement.clientHeight, window.innerHeight || 0) * 2,
           w = (window.pageYOffset !== undefined) ? window.pageYOffset : (document.documentElement || document.body.parentNode || document.body).scrollTop;
       if(w > d) {
@@ -261,7 +261,7 @@
       }
     }, 10);
 
-    window.addEventListener('scroll', myEfficientFn);
+    window.addEventListener('scroll', arrowize);
   </script>
 
 {{ partial "footer.html" . }}
