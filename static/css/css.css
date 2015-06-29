@@ -326,12 +326,20 @@ ul {
   text-align: center;
   margin-bottom: 2em;
 }
+.speakers ul {
+  padding-bottom: 2em;
+}
 .speakers li:nth-child(2n+1) {
   padding-right: 1em;
   clear: left;
 }
 .speakers li:nth-child(2n+0) {
   padding-left: 1em;
+}
+.speakers li:nth-child(2n+1):last-child {
+  float: none;
+  margin: 0 auto;
+  padding: 0;
 }
 .speakers li img {
   width: 80%;
