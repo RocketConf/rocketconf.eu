@@ -127,7 +127,7 @@
 
     <section class="venue">
       <h2>Venue</h2>
-      <div id="venue-map"></div>
+      <div class="venue-map"></div>
       <div class="venue-float">
         <h3>Pakhuis de Zwijger</h3>
         <img src="/img/pakhuis-de-zwijger.jpg" alt="Pakhuis de Zwijger, Amsterdamn">
@@ -230,30 +230,7 @@
 
   </main>
 
-  <script src="//maps.googleapis.com/maps/api/js?v=3.exp"></script>
   <script>
-    var map;
-    function initialize() {
-      var venue = new google.maps.LatLng(52.37667,4.922122);
-      var center = new google.maps.LatLng(52.37667,4.942122);
-      var mapOptions = {
-        zoom: 13,
-        center: center,
-        scrollwheel: false,
-        disableDefaultUI: true,
-        disableDoubleClickZoom: true,
-        draggable: false
-      };
-      map = new google.maps.Map(document.getElementById('venue-map'),
-          mapOptions);
-      var marker = new google.maps.Marker({
-          position: venue,
-          map: map,
-          title: 'Pakhuis de Zwijger'
-      });
-    }
-    google.maps.event.addDomListener(window, 'load', initialize);
-
     function debounce(func, wait, immediate) {
       var timeout;
       return function() {

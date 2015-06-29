@@ -363,7 +363,9 @@ ul {
   padding: 0;
   position: relative;
 }
-#venue-map {
+.venue-map {
+  background: #fff url(/img/map.jpg) left center no-repeat;
+  background-size: cover;
   height: 25em;
 }
 .venue h2 {
@@ -447,9 +449,10 @@ ul {
   border: 0;
   padding: 0.5em;
   border-radius: 3px;
+  background: #eee;
 }
 .contact input:focus {
-  background-color: yellow;
+  background: #fff;
   outline: 0;
 }
 .contact button {
@@ -537,7 +540,7 @@ ul {
   .contact article > div:first-child {
     padding-bottom: 3em;
   }
-  #venue-map {
+  .venue-map {
     margin-bottom: 10em;
   }
   .venue-float {
@@ -610,7 +613,7 @@ ul {
   }
 }
 @media (max-width: 25em) {
-  #venue-map {
+  .venue-map {
     margin-bottom: 16em;
   }
   .venue-float {
