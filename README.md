@@ -18,6 +18,8 @@ are stored in `content/`.
 Deployments are handled by CodeShip.io - whenever changes are pushed to
 `master`, codeship will generate the site and upload it to http://www.rocketconf.eu.
 
+[ ![Codeship Status for rocketconf/rocketconf.eu](https://codeship.com/projects/38656730-f32a-0132-9776-3e6d48e99cd7/status?branch=master)](https://codeship.com/projects/85343)
+
 ## License
 
 The content and logo are copyrighted material, you may not re-use them
