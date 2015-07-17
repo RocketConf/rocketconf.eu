@@ -240,7 +240,7 @@ ul {
   margin: 0;
 }
 .who-what-where h2 {
-  color: black;
+  color: #000;
   font-size: 1.5em;
   margin-bottom: 0.1em;
 }
@@ -329,6 +329,7 @@ ul {
   left: 0;
   right: 0;
   bottom: -0.27em;
+  bottom: 1em;
   text-align: center;
   text-transform: uppercase;
 }
@@ -382,7 +383,6 @@ ul {
   border-radius: 50%;
   margin-bottom: 1em;
 }
-
 
 /**
  * Tickets
@@ -452,16 +452,7 @@ ul {
 .code-of-conduct {
   background-color: #fff;
 }
-.code-of-conduct-page {
-  background-color: #fff;
-  margin-top: 5em;
-  margin-bottom: 5em;
-}
-.standalone-logo {
-  display: block;
-  max-width: 10em;
-  margin: 0 auto;
-}
+
 
 /**
  * Contact
@@ -513,7 +504,6 @@ ul {
   background-color: #fff;
   margin-bottom: 95vh;
   box-shadow: 0 0 2em 1em rgba(0, 0, 0, 0.5);
-
 }
 .sponsors p {
   text-align: center;
@@ -550,6 +540,43 @@ ul {
 .sponsor-rocketconf {
   padding-top: 2em;
 }
+
+/**
+ * Speaker page
+ */
+.speaker-intro {
+  margin-bottom: 2em;
+}
+.speaker-intro img {
+  max-height: 12em;
+  border-radius: 50%;
+  float: left;
+  margin-right: 2em;
+}
+.speaker-intro h2 {
+  text-align: left;
+  margin: 1.25em 0 0 0;
+}
+.speaker-intro h3 {
+  text-align: left;
+  color: #000;
+}
+
+
+/**
+ * Standalone page
+ */
+.standalone-page {
+  background-color: #fff;
+  margin-top: 5em;
+  margin-bottom: 5em;
+}
+.standalone-page .who-what-where {
+  padding-bottom: 1em;
+  margin-bottom: 3em;
+  border-bottom: 1px dashed #d8d8d8;
+}
+
 
 @media (max-width: 60em) {
   .venue h2 {

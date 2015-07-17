@@ -1,9 +1,8 @@
 ---
 title: "Thanks for subscribing!"
+layout: "subpage"
 ---
-Thanks for subscribing to our newsletter! 
 
-We promise not to spam you, just keep you up to date on the 
-latest news about RocketConf 2015.
+# Thanks for subscribing!
 
-<a href="/">&laquo; Back to RocketConf.eu</a>
+<p class="center-text">We promise not to spam you, just keep you up to date on the latest news about RocketConf 2015.<p>
