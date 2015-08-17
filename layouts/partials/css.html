@@ -523,28 +523,30 @@ ul {
 }
 .sponsors li h4 {
   color: #000;
+  opacity: 0.5;
 }
 .sponsors li:first-child:last-child {
   width: 100%;
 }
-.sponsors li img {
+.sponsors img {
   display: block;
-  width: 80%;
-  max-width: 20em;
+  max-height: 4em;
+  max-width: 100%;
   margin: 2em auto 1em auto;
 }
 .sponsors li:nth-child(2n+1) {
   clear: left;
 }
-
-.sponsors #silver-sponsors li img {
-    width: 30%;
+.sponsors img.kabisa-sponsor {
+  max-height: 7em;
 }
-
-.sponsors #bronze-sponsors li img {
-    width: 15%;
+.sponsors img.incentro-sponsor {
+  max-height: 3em;
 }
-
+.sponsors img.coreos-sponsor {
+  max-height: 3em;
+  margin: 2.5em auto 1.5em auto;
+}
 .sponsor-rocketconf {
   padding-top: 2em;
 }
@@ -666,6 +668,10 @@ ul {
   }
   .programme time {
     width: 3em;
+  }
+  .sponsors li {
+    float: none;
+    width: 100%;
   }
 }
 @media (max-width: 32em) {
