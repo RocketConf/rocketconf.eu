@@ -289,9 +289,8 @@ ul {
   background: #29abe2;
   color: #fff;
   position: absolute;
-  top: 50%;
+  top: 2em;
   left: 0;
-  margin-top: -1.5em;
   text-align: center;
   line-height: 1;
   border-radius: 50%;
@@ -304,7 +303,24 @@ ul {
 .programme h3 {
   text-align: left;
 }
-
+.programme li {
+  border-bottom: 1px dashed #d8d8d8;
+  padding: 0.5em 0;
+}
+.programme li:first-child {
+  border-top: 1px dashed #d8d8d8;
+}
+.programme .day-three li {
+  border-color: #c8c8c8;
+}
+.programme time {
+  display: inline-block;
+  width: 5em;
+  opacity: 0.4;
+}
+.programme .break span {
+  opacity: 0.4;
+}
 
 
 /**
@@ -347,13 +363,15 @@ ul {
   display: block;
   float: left;
   width: 50%;
+  width: 33%;
   padding-bottom: 3em;
+  padding: 2em 0.25em 0 0.25em;
 }
 .speakers h2,
 .speakers h3,
 .speakers h4 {
   clear: left;
-  text-align: center;
+  margin: 0;
 }
 .speakers h4 {
   color: #000;
@@ -364,17 +382,8 @@ ul {
   text-align: center;
   margin-bottom: 2em;
 }
-.speakers li:nth-child(2n+1) {
-  padding-right: 1em;
+.speakers li:nth-child(3n+1) {
   clear: left;
-}
-.speakers li:nth-child(2n+0) {
-  padding-left: 1em;
-}
-.speakers li:nth-child(2n+1):last-child {
-  float: none;
-  margin: 0 auto;
-  padding: 0;
 }
 .speakers li img {
   width: 80%;
@@ -514,28 +523,30 @@ ul {
 }
 .sponsors li h4 {
   color: #000;
+  opacity: 0.5;
 }
 .sponsors li:first-child:last-child {
   width: 100%;
 }
-.sponsors li img {
+.sponsors img {
   display: block;
-  width: 80%;
-  max-width: 20em;
+  max-height: 4em;
+  max-width: 100%;
   margin: 2em auto 1em auto;
 }
 .sponsors li:nth-child(2n+1) {
   clear: left;
 }
-
-.sponsors #silver-sponsors li img {
-    width: 30%;
+.sponsors img.kabisa-sponsor {
+  max-height: 7em;
 }
-
-.sponsors #bronze-sponsors li img {
-    width: 15%;
+.sponsors img.incentro-sponsor {
+  max-height: 3em;
 }
-
+.sponsors img.coreos-sponsor {
+  max-height: 3em;
+  margin: 2.5em auto 1.5em auto;
+}
 .sponsor-rocketconf {
   padding-top: 2em;
 }
@@ -603,9 +614,13 @@ ul {
     font-size: 1.5em;
   }
   .speakers li:nth-child(n) {
-    width: 100%;
-    float: none;
-    padding: 0 0 3em 0;
+    width: 50%;
+  }
+  .speakers li:nth-child(2n+1) {
+    clear: left;
+  }
+  .speakers li:nth-child(3n+1) {
+    clear: none;
   }
   .speakers li img {
     width: 60%;
@@ -651,6 +666,13 @@ ul {
     text-align: left;
     padding-left: 1em;
   }
+  .programme time {
+    width: 3em;
+  }
+  .sponsors li {
+    float: none;
+    width: 100%;
+  }
 }
 @media (max-width: 32em) {
   body {
@@ -687,6 +709,7 @@ ul {
     position: relative;
     margin: 0 auto;
     left: 0;
+    top: 0;
   }
   .mailinglist-submit {
     display: block;
