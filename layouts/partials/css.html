@@ -310,6 +310,9 @@ ul {
 .programme li:first-child {
   border-top: 1px dashed #d8d8d8;
 }
+.programme .day-three li {
+  border-color: #c8c8c8;
+}
 .programme time {
   display: inline-block;
   width: 5em;
@@ -609,9 +612,13 @@ ul {
     font-size: 1.5em;
   }
   .speakers li:nth-child(n) {
-    width: 100%;
-    float: none;
-    padding: 0 0 3em 0;
+    width: 50%;
+  }
+  .speakers li:nth-child(2n+1) {
+    clear: left;
+  }
+  .speakers li:nth-child(3n+1) {
+    clear: none;
   }
   .speakers li img {
     width: 60%;
@@ -657,6 +664,9 @@ ul {
     text-align: left;
     padding-left: 1em;
   }
+  .programme time {
+    width: 3em;
+  }
 }
 @media (max-width: 32em) {
   body {
@@ -693,6 +703,7 @@ ul {
     position: relative;
     margin: 0 auto;
     left: 0;
+    top: 0;
   }
   .mailinglist-submit {
     display: block;
