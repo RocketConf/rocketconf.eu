@@ -355,6 +355,9 @@ ul {
 .speakers {
   background-color: #fff;
 }
+.speakers a {
+  text-decoration: none;
+}
 .speakers ul {
   padding-bottom: 2em;
 }
@@ -585,11 +588,31 @@ ul {
   padding-bottom: 1em;
   margin-bottom: 3em;
   border-bottom: 1px dashed #d8d8d8;
+  font-size: 0.6em;
+}
+.standalone-page .who-what-where h1 {
+  float: left;
+}
+.standalone-page .who-what-where h2 {
+  padding-top: 0.75em;
+  float: right;
+}
+.standalone-page .who-what-where span {
+  float: right;
 }
 .standalone-page .who-what-where a {
   text-decoration: none;
 }
-
+@media (max-width: 64em) {
+  .standalone-page .who-what-where h1,
+  .standalone-page .who-what-where h2,
+  .standalone-page .who-what-where span {
+    float: none;
+  }
+  .standalone-page .who-what-where h2 {
+    padding-top: 0;
+  }
+}
 
 @media (max-width: 60em) {
   .venue h2 {
