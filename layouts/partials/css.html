@@ -559,20 +559,36 @@ ul {
  */
 .speaker-intro {
   margin-bottom: 2em;
+  padding-bottom: 2em;
+  border-bottom: 1px dashed #d8d8d8;
+}
+.speaker-intro span {
+  display: block;
+  font-size: 1.2em;
+  line-height: 1.4;
+}
+.speaker-intro h1 {
+  margin: 0;
 }
 .speaker-intro img {
-  max-height: 12em;
-  border-radius: 50%;
   float: left;
-  margin-right: 2em;
+  margin-right: 1em;
+  max-height: 3.5em;
+  border-radius: 50%;
 }
 .speaker-intro h2 {
-  text-align: left;
+  /*text-align: left;*/
   margin: 1.25em 0 0 0;
 }
 .speaker-intro h3 {
-  text-align: left;
+  float: left;
+  /*text-align: left;*/
+  margin: 0;
   color: #000;
+}
+.speaker-slot {
+  max-width: 20em;
+  margin: 0 auto;
 }
 
 
@@ -603,6 +619,7 @@ ul {
 .standalone-page .who-what-where a {
   text-decoration: none;
 }
+
 @media (max-width: 64em) {
   .standalone-page .who-what-where h1,
   .standalone-page .who-what-where h2,
@@ -737,6 +754,13 @@ ul {
   .mailinglist-submit {
     display: block;
     margin-top: 0.5em;
+  }
+  .speaker-slot {
+    text-align: center;
+  }
+  .speaker-slot img {
+    float: none;
+    margin: 1em 0 0 0;
   }
 }
 @media (max-width: 25em) {
