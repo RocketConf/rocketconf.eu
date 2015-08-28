@@ -314,14 +314,25 @@ ul {
   border-color: #c8c8c8;
 }
 .programme time {
-  display: inline-block;
+  float: left;
   width: 5em;
   opacity: 0.4;
 }
 .programme .break span {
   opacity: 0.4;
 }
-
+.speaker a {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  overflow: hidden;
+}
+.speaker a:hover {
+  text-decoration: underline;
+}
+.speaker em {
+  opacity: 0.5;
+}
 
 /**
  * Amsterdam
@@ -401,6 +412,9 @@ ul {
 .tickets {
  background-color: #29abe2;
  color: #fff;
+ padding-top: 6em;
+ padding-bottom: 4em;
+ text-align: center;
 }
 .tickets h2 {
   color: #fff;
